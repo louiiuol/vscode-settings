@@ -1,0 +1,32 @@
+{
+  "name": "lou-s-ui",
+  "displayName": "Lou's UI",
+  "description": "All extensions recommended for building UI",
+  "version": "1.0.0",
+  "publisher": "louiiuol",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+
+    "firsttris.vscode-jest-runner",
+
+    "Angular.ng-template",
+    "johnpapa.Angular2",
+    "nrwl.angular-console",
+
+    "octref.vetur",
+
+    "glenn2223.live-sass",
+    "mrmlnc.vscode-scss",
+    "syler.sass-indented",
+    "ecmel.vscode-html-css",
+    "Zignd.html-css-class-completion",
+
+    "rbbit.typescript-hero",
+    "xabikos.JavaScriptSnippets"
+  ]
+}

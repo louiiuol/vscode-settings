@@ -1,0 +1,165 @@
+{
+	"window.restoreFullscreen": true, // Restore window in fullscreen if was close in it
+	"window.openFoldersInNewWindow": "on", // Always on pen new folders in separated window (tab cf. below)
+	"window.nativeTabs": true, // Uses Macos Native tabs (multiples tabs in one window)
+	"window.confirmBeforeClose": "keyboardOnly", // ask confirmation if quiting after pressing "cmd + Q" shortcut
+	"window.commandCenter": true,
+
+	//* WORKBENCH
+	"workbench.list.smoothScrolling": true,
+	"workbench.editor.showTabs": true,
+	"workbench.editor.enablePreview": true,
+	"workbench.startupEditor": "none",
+	"workbench.editor.untitled.hint": "hidden",
+
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
+
+	//* EDITOR
+	// Global
+	"editor.rulers": [80],
+	"editor.tabSize": 2, // The number of spaces a tab is equal to
+	"editor.useTabStops": true, // Inserting and deleting whitespace follows tab stops.
+	"editor.suggestSelection": "first", // Controls how suggestions are pre-selected when showing the suggest list.
+	"editor.suggest.insertMode": "replace",
+	"editor.renderWhitespace": "trailing", // Render only trailing whitespace characters.
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true, // Controls whether each bracket type has its own independent color pool.
+	"editor.definitionLinkOpensInPeek": false, // Controls whether the Go to Definition mouse gesture always opens the peek widget.
+	"editor.linkedEditing": true, // Controls whether the editor has linked editing enabled.
+	"editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.stickyScroll.enabled": true,
+
+	// Scroll
+	"editor.mouseWheelZoom": true, // enable scrolls w/ mousewheel when 'ctrl' is pressed
+	"editor.smoothScrolling": true, // Controls whether the editor will scroll using an animation
+	"editor.fontLigatures": true, // Special character like arrows are now displays as icon (ex: =>)
+
+	// Formatting settings
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnPaste": false, //! required
+	"editor.formatOnType": false, //! required
+	"editor.formatOnSave": true, // optional but recommended
+	"editor.formatOnSaveMode": "file", //! required to format on save
+	// Override default formatters
+	"[markdown]": {
+		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+	},
+	"[xml]": {
+		"editor.defaultFormatter": "redhat.vscode-xml"
+	},
+
+	//* FILES
+	"files.autoSave": "afterDelay",
+	"files.trimTrailingWhitespace": true,
+	"files.defaultLanguage": "typescript",
+	"files.exclude": {
+		"**/.git": false,
+		"**/.gitignore": false,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"./node_modules/**": true
+	},
+
+	//* EXPLORER
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+
+	//* SEARCH
+	"search.smartCase": true,
+	"search.exclude": {
+		"**/node_modules": true
+	},
+
+  //* TERMINAL
+  "terminal.external.windowsExec": "C:\\Program Files\\Cmder\\Cmder.exe", // Need Cmder to be installed there
+	"terminal.external.osxExec": "iTerm.app", // Need iTerm to be installed
+	"terminal.integrated.defaultLocation": "editor",
+	"terminal.integrated.bellDuration": 2000,
+  "terminal.integrated.copyOnSelection": true,
+	"terminal.integrated.inheritEnv": false,
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"terminal.integrated.tabs.enabled": true,
+
+	//* SECURITY
+	"security.workspace.trust.untrustedFiles": "open",
+
+	//* NOTEBOOK
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+
+	//* DEBUG
+	"debug.showBreakpointsInOverviewRuler": true, // Controls whether breakpoints should be shown in the overview ruler.
+
+	//* LANGUAGES
+	//?xml
+	"xml.validation.resolveExternalEntities": true,
+
+	//? Javascript
+	"javascript.updateImportsOnFileMove.enabled": "always",
+
+	//? typescript
+	"typescript.updateImportsOnFileMove.enabled": "always",
+
+	//? Markdown
+	"markdown.preview.lineHeight": 2,
+
+	//* GIT
+	"git.confirmSync": false, // Confirm before synchronizing git repositories.
+	"git.enableSmartCommit": true, // Commit all changes when there are no staged changes.
+	"diffEditor.ignoreTrimWhitespace": true, // When enabled, the diff editor ignores changes in leading or trailing whitespace.
+	"git.autofetch": true,
+	"github.gitAuthentication": true,
+
+	//* EXTENSIONS
+	//? Prettier
+	"prettier.jsxSingleQuote": true,
+	"prettier.singleQuote": true,
+	"prettier.trailingComma": "all",
+	"prettier.useTabs": true,
+	"prettier.vueIndentScriptAndStyle": true,
+	"prettier.configPath": ".prettierrc",
+	"prettier.requireConfig": true,
+
+	//? ESlint
+	"eslint.format.enable": true,
+	"eslint.alwaysShowStatus": true,
+
+	//? sonarlint
+	"sonarlint.rules": {
+		"typescript:S107": {
+			"level": "off"
+		},
+		"typescript:S1186": {
+			"level": "off"
+		},
+		"typescript:S125": {
+			"level": "off"
+		}
+	},
+
+	//? Multi commands
+	"multiCommand.commands": [
+		{
+			"command": "Make Room 🧹",
+			"sequence": [
+				"workbench.action.toggleActivityBarVisibility"
+			]
+		},
+		{
+			"command": "Back to Project & close sidebar",
+			"sequence": [
+				"workbench.view.explorer",
+				"workbench.action.closeSidebar",
+			]
+		}
+	],
+
+	//* Unclassified settings (imported by dev)
+	"emmet.triggerExpansionOnTab": true
+
+}

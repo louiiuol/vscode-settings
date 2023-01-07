@@ -1,0 +1,134 @@
+{
+	"window.zoomLevel": 1,
+	"window.titleBarStyle": "custom",
+	"workbench.colorTheme": "Night Rider",
+	"workbench.iconTheme": "eq-material-theme-icons-light",
+	"material-icon-theme.hidesExplorerArrows": true,
+	"workbench.colorCustomizations": {
+		"[Night Rider]": {
+			"editor.selectionBackground": "#f99fc98b",
+			"editor.selectionForeground": "#7D2248",
+			"editor.selectionHighlightBackground": "#87345b8b",
+			"tab.activeBackground": "#502B3A"
+		}
+	},
+
+	"workbench.tree.indent": 18,
+	"workbench.tree.renderIndentGuides": "always",
+
+	"terminal.integrated.fontFamily": "monospace",
+	"editor.fontFamily": "Cascadia Code, Fira Code, Menlo, Monaco, Roboto, monospace",
+	"editor.minimap.autohide": true,
+	"editor.fontSize": 17,
+	"editor.lineHeight": 36,
+	"editor.fontWeight": "400",
+	"editor.tokenColorCustomizations": {
+		"comments": "#91d5fd",
+		"textMateRules": [
+			{
+				"scope": "emphasis",
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": "strong",
+				"settings": {
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "entity.other.attribute-name",
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": "markup.underline",
+				"settings": {
+					"fontStyle": "underline"
+				}
+			},
+			{
+				"scope": "markup.bold",
+				"settings": {
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "markup.heading",
+				"settings": {
+					"fontStyle": "bold"
+				}
+			},
+			{
+				"scope": "markup.italic",
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"name": "String interpolation",
+				"scope": [
+					"punctuation.definition.template-expression.begin",
+					"punctuation.definition.template-expression.end",
+					"punctuation.section.embedded"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"name": "this.self",
+				"scope": "variable.language",
+				"settings": {
+					"fontStyle": "italic",
+					"foreground": "#ff5874"
+				}
+			},
+			{
+				"name": "@Decorator",
+				"scope": ["meta.decorator punctuation.decorator"],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": ["punctuation.definition.comment", "comment"],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					"entity.name.type.class",
+					"keyword",
+					"constant",
+					"storage.modifier",
+					"storage.type",
+					"storage.type.class.js"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					"invalid",
+					"keyword.operator",
+					"constant.numeric.css",
+					"keyword.other.unit.px.css",
+					"constant.numeric.decimal.js",
+					"constant.numeric.json"
+				],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
+	"editor.cursorStyle": "line-thin",
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.cursorBlinking": "phase",
+	"terminal.integrated.cursorBlinking": true
+}

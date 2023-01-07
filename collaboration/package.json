@@ -1,0 +1,23 @@
+{
+  "name": "lou-s-collaborators",
+  "publisher": "louiiuol",
+  "displayName": "Collaboration's tools 👥",
+  "description": "All extensions required to collaborate on multiple projects",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "SonarSource.sonarlint-vscode",
+    "rvest.vs-code-prettier-eslint",
+    "donjayamanne.githistory",
+    "waderyan.gitblame",
+    "qezhu.gitlink",
+    "seatonjiang.gitmoji-vscode"
+  ]
+}
